@@ -53,13 +53,12 @@ table {
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     color: black;
-    table-layout: fixed; /* Ensure the table layout remains fixed */
 }
 
 table th, table td {
     padding: 15px;
     text-align: left;
-    word-wrap: break-word; /* Enable word wrapping for long content */
+    white-space: nowrap; /* Prevent text from wrapping */
 }
 
 table th {
