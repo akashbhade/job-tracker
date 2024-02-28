@@ -3,12 +3,13 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: black;
+    background-color: #000000;
+    /* color: black; */
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 95%;
+    margin: 80px auto 20px auto;
     padding: 20px;
 }
 
@@ -75,7 +76,6 @@ table tbody tr:nth-child(even) {
 #addJobForm label {
     display: block;
     margin-bottom: 5px;
-    color: white;
 }
 
 #addJobForm input[type="text"],
@@ -97,4 +97,17 @@ table tbody tr:nth-child(even) {
     font-size: 16px;
     cursor: pointer;
     border-radius: 5px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 20px;
+    }
+    .container {
+        padding: 10px;
+    }
+    #addRow {
+        margin-left: 10px;
+    }
 }
